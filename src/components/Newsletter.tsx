@@ -30,7 +30,7 @@ export default function Newsletter() {
           {subscribed ? (
             <div className="bg-green-50 border border-green-200 rounded-lg p-6">
               <p className="text-green-800 text-lg">
-                ✨ Thank you for subscribing! Welcome to the Styled by Aria community.
+                ✨ Thank you for subscribing! Welcome to the Styled by Shikha community.
               </p>
             </div>
           ) : (

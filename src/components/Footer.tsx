@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <h3 className="text-xl font-light tracking-[0.2em] uppercase mb-4">
-              Styled by Aria
+              Styled by Shikha
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Curating timeless elegance and modern style. Your destination for
@@ -68,7 +68,7 @@ export default function Footer() {
                 <svg className="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span className="text-gray-400 text-sm">hello@styledbyaria.com</span>
+                <span className="text-gray-400 text-sm">hello@styledbyshikha.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <svg className="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -90,7 +90,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            © 2024 Styled by Aria. All rights reserved.
+            © 2024 Styled by Shikha. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-gray-500 text-sm hover:text-gray-300 transition-colors duration-300">

@@ -20,7 +20,7 @@ export default function Hero() {
           Fashion • Style • Lifestyle
         </p>
         <h1 className="text-white text-5xl md:text-7xl lg:text-8xl font-light tracking-wide leading-tight mb-8">
-          Styled by Aria
+          Styled by Shikha
         </h1>
         <p className="text-white/90 text-lg md:text-xl font-light max-w-2xl mx-auto mb-10 leading-relaxed">
           Curating timeless elegance and modern style. Discover outfit inspiration,

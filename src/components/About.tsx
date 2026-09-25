@@ -8,7 +8,7 @@ export default function About() {
             <div className="aspect-[4/5] overflow-hidden">
               <img
                 src="https://image.qwenlm.ai/generated-images/6fb0afbd-e14a-456e-a99f-1fb0b9446079/_result.png"
-                alt="Aria - Fashion Stylist"
+                alt="Shikha - Fashion Stylist"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -21,7 +21,7 @@ export default function About() {
               About Me
             </p>
             <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8 leading-tight">
-              Hello, I'm Aria
+              Hello, I'm Shikha
             </h2>
             <div className="space-y-5 text-gray-600 leading-relaxed">
               <p>

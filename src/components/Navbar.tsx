@@ -32,7 +32,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
               scrolled ? 'text-gray-900' : 'text-white'
             }`}
           >
-            Styled by Aria
+            Styled by Shikha
           </span>
         </a>
 

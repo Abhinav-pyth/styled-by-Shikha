@@ -1,8 +1,8 @@
-# Styled by Aria - Fashion & Style Blog
+# Styled by Shikha - Fashion & Style Blog
 
-A modern, elegant fashion blog website built with React, Vite, and Tailwind CSS. Inspired by [styledbyaria.com](https://www.styledbyaria.com/).
+A modern, elegant fashion blog website built with React, Vite, and Tailwind CSS.
 
-![Styled by Aria](https://img.shields.io/badge/Styled%20by-Aria-amber?style=for-the-badge)
+![Styled by Shikha](https://img.shields.io/badge/Styled%20by-Shikha-amber?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-18-blue?style=flat-square&logo=react)
 ![Vite](https://img.shields.io/badge/Vite-6-purple?style=flat-square&logo=vite)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-cyan?style=flat-square&logo=tailwindcss)
@@ -30,7 +30,7 @@ A modern, elegant fashion blog website built with React, Vite, and Tailwind CSS.
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd styled-by-aria
+cd styled-by-shikha
 
 # Install dependencies
 npm install
@@ -87,7 +87,7 @@ That's it! Vercel will automatically build and deploy your site.
 ## 📁 Project Structure
 
 ```
-styled-by-aria/
+styled-by-shikha/
 ├── public/              # Static assets
 ├── src/
 │   ├── components/      # React components
