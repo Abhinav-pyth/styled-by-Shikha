@@ -2,9 +2,11 @@ import { useState } from 'react';
 
 interface NavbarProps {
   scrolled: boolean;
+  darkMode: boolean;
+  onToggleDarkMode: () => void;
 }
 
-export default function Navbar({ scrolled }: NavbarProps) {
+export default function Navbar({ scrolled, darkMode, onToggleDarkMode }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
@@ -12,6 +14,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Portfolio', href: '#portfolio' },
+    { name: 'Pricing', href: '#pricing' },
     { name: 'Blog', href: '#blog' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -37,7 +40,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -49,12 +52,31 @@ export default function Navbar({ scrolled }: NavbarProps) {
               {link.name}
             </a>
           ))}
+          
+          {/* Dark Mode Toggle */}
+          <button
+            onClick={onToggleDarkMode}
+            className={`w-9 h-9 flex items-center justify-center rounded-full transition-colors duration-300 ${
+              scrolled ? 'text-gray-700 hover:bg-gray-100' : 'text-white/90 hover:bg-white/10'
+            }`}
+            aria-label="Toggle dark mode"
+          >
+            {darkMode ? (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            ) : (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+            )}
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className={`md:hidden transition-colors duration-300 ${
+          className={`lg:hidden transition-colors duration-300 ${
             scrolled ? 'text-gray-900' : 'text-white'
           }`}
         >
@@ -85,7 +107,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 right-0 bg-white shadow-lg transition-all duration-300 ${
+        className={`lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg transition-all duration-300 ${
           menuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
@@ -100,6 +122,12 @@ export default function Navbar({ scrolled }: NavbarProps) {
               {link.name}
             </a>
           ))}
+          <button
+            onClick={() => { onToggleDarkMode(); setMenuOpen(false); }}
+            className="flex items-center gap-2 text-sm tracking-widest uppercase text-gray-700 py-2"
+          >
+            {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+          </button>
         </div>
       </div>
     </nav>

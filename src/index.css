@@ -16,6 +16,59 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
 
+/* Dark mode styles */
+.dark body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark .bg-white {
+  background-color: #2d2d2d !important;
+}
+
+.dark .bg-stone-50,
+.dark .bg-stone-100 {
+  background-color: #1f1f1f !important;
+}
+
+.dark .text-gray-900 {
+  color: #f5f5f5 !important;
+}
+
+.dark .text-gray-700 {
+  color: #d4d4d4 !important;
+}
+
+.dark .text-gray-600 {
+  color: #a3a3a3 !important;
+}
+
+.dark .text-gray-500 {
+  color: #737373 !important;
+}
+
+.dark .border-gray-200,
+.dark .border-gray-300 {
+  border-color: #404040 !important;
+}
+
+.dark .border-gray-100 {
+  border-color: #333333 !important;
+}
+
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #3d3d3d !important;
+  border-color: #525252 !important;
+  color: #f5f5f5 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #737373 !important;
+}
+
 /* Custom animations */
 @keyframes fade-in {
   from {
@@ -50,8 +103,28 @@ h1, h2, h3, h4, h5, h6 {
   background: #78716c;
 }
 
+.dark ::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #525252;
+}
+
 /* Selection color */
 ::selection {
   background-color: #d97706;
   color: white;
+}
+
+/* Smooth transitions for dark mode */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* Prevent transition on page load */
+.no-transition * {
+  transition: none !important;
 }
